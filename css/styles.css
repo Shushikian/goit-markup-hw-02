@@ -10,6 +10,7 @@
   --link-focus: #2196f3;
   --main-hero-background: #2f303a;
   --main-title-txt: #ffffff;
+  --main-button-background: #2196f3;
   --main-button-txt: #fff;
   --main-text-p: #757575;
   --footer-background-color: #2f303a;
@@ -33,7 +34,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--logo-color);
 }
 
@@ -50,19 +50,19 @@ body {
   color: var(--active-html);
 }
 
-.nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--nav);
-}
-
+.nav,
 .info-head {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+}
+
+.nav {
+  color: var(--nav);
+}
+
+.info-head {
   color: var(--info-head);
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 .main-button {
-  background-color: #2196f3;
+  background-color: var(--main-button-background);
   color: var(--main-button-txt);
   font-weight: 700;
   font-size: 16px;
