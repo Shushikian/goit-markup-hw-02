@@ -46,7 +46,7 @@ body {
   color: var(--link-main-color);
 }
 
-.active-link {
+.current {
   color: var(--active-html);
 }
 
