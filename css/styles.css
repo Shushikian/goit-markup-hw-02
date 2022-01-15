@@ -11,6 +11,9 @@
   --footer-info: rgba(255, 255, 255, 0.6);
   --portf-button-txt: #212121;
   --portf-button-background: #f5f4fa;
+  --portf-work-title: #212121;
+  --portf-work-text: #757575;
+  --link-focus: #2196f3;
 }
 
 body {
@@ -56,14 +59,29 @@ body {
   color: var(--info-head);
 }
 
-.nav,
-.info-head {
+.nav li:hover,
+.info-head li:hover,
+.nav li:focus,
+.info-head li:focus {
+  color: var(--link-focus);
 }
 
 .list {
   list-style: none;
 }
 
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-adress {
+  color: var(--footer-adress);
+}
+
+.footer-info {
+  color: var(--footer-info);
+}
+/*---------------------------------MAIN----------------------------------------*/
 .hero {
   background-color: #2f303a;
 }
@@ -123,17 +141,7 @@ body {
   color: var(--main-text-p);
 }
 
-.footer {
-  background-color: var(--footer-background-color);
-}
-
-.footer-adress {
-  color: var(--footer-adress);
-}
-
-.footer-info {
-  color: var(--footer-info);
-}
+/*------------------------PORTFOLIO---------------------*/
 
 .portf-button {
   font-weight: 500;
@@ -143,4 +151,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--portf-button-txt);
   background-color: var(--portf-button-background);
+}
+
+.portf-work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--portf-work-title);
+}
+
+.portf-work-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--portf-work-text);
 }
