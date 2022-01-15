@@ -69,7 +69,9 @@ body {
 .nav .link:hover,
 .info-head .link:hover,
 .nav .link:focus,
-.info-head .link:focus {
+.info-head .link:focus,
+.footer-info .link:hover,
+.footer-info .link:focus {
   color: var(--link-focus);
 }
 
@@ -114,6 +116,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .title {
@@ -158,6 +161,7 @@ body {
   text-align: center;
   color: var(--portf-button-txt);
   background-color: var(--portf-button-background);
+  cursor: pointer;
 }
 
 .portf-work-title {
